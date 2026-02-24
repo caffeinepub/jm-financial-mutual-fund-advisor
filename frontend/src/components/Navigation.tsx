@@ -35,7 +35,7 @@ export default function Navigation() {
               <TrendingUp className="w-5 h-5 text-navy-900" />
             </div>
             <div className="flex flex-col leading-tight">
-              <span className="font-display font-bold text-base text-white tracking-wide">Planinvestgrow</span>
+              <span className="font-display font-bold text-base text-white tracking-wide">FutureEdge Investment</span>
               <span className="text-xs text-gold-400 font-semibold tracking-widest uppercase">Plan · Invest · Grow</span>
             </div>
           </Link>

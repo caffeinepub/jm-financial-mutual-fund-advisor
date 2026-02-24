@@ -1,165 +1,33 @@
 {
   "kind": "implementation_plan",
   "version": "1.0",
-  "title": "Blue theme, contact details, tagline, global funds USP, and professional imagery",
+  "title": "Rename site/brand to 'FutureEdge Investment'",
   "requirements": [
     {
-      "id": "REQ-14",
-      "summary": "Update site-wide color theme from forest-green/gold to professional blue palette",
+      "id": "REQ-19",
+      "summary": "Update all occurrences of 'Planinvestgrow' brand name to 'FutureEdge Investment' across the frontend application while preserving the 'Plan-Invest-Grow' tagline",
       "acceptanceCriteria": [
-        "Primary color tokens in index.css and tailwind.config.js are updated to deep navy/royal blue shades",
-        "All green-colored UI elements (buttons, headers, badges, borders, backgrounds) are replaced with blue equivalents",
-        "Gold/amber accent colors are retained for contrast and highlights",
-        "No residual forest-green colors remain in the visible UI"
+        "frontend/index.html page title displays 'FutureEdge Investment - Mutual Fund Advisor' (or equivalent).",
+        "Navigation logo/brand name text reads 'FutureEdge Investment'.",
+        "Footer branding reads 'FutureEdge Investment'.",
+        "No instance of 'Planinvestgrow' remains visible in the UI as a brand or site name.",
+        "The tagline 'Plan-Invest-Grow' continues to appear in all locations where it was previously displayed."
       ],
       "file_operations": [
         {
-          "path": "frontend/src/index.css",
+          "path": "frontend/index.html",
           "operation": "modify",
-          "description": "Replace all forest-green OKLCH color custom properties with deep navy/royal blue equivalents. Update primary color tokens (--primary, --primary-foreground, etc.) to use blue shades (e.g., OKLCH 0.35 0.15 250 for deep navy). Retain gold/amber accent colors. Remove or replace any green-based utility classes and gradients with blue equivalents."
-        },
-        {
-          "path": "frontend/tailwind.config.js",
-          "operation": "modify",
-          "description": "Update the theme.extend.colors configuration to replace forest-green scale with a professional blue palette (deep navy as primary, royal blue for interactive states). Update semantic color tokens (primary, secondary, accent) to reference the new blue palette. Retain gold/amber accent colors for contrast."
+          "description": "Update the HTML page title from 'Planinvestgrow - Mutual Fund Advisor' to 'FutureEdge Investment - Mutual Fund Advisor' in the <title> tag"
         },
         {
           "path": "frontend/src/components/Navigation.tsx",
           "operation": "modify",
-          "description": "Replace any forest-green background, border, or text color classes with blue equivalents (e.g., bg-primary, border-primary). Ensure the 'Book Free Consultation' button uses the new blue primary color with gold/amber accents."
-        },
-        {
-          "path": "frontend/src/components/HeroSection.tsx",
-          "operation": "modify",
-          "description": "Update gradient backgrounds, badge colors, and button styles to use the new blue palette. Replace green-based classes with blue equivalents. Ensure badges and stat cards use blue primary colors with gold accents."
-        },
-        {
-          "path": "frontend/src/components/AdvisorProfile.tsx",
-          "operation": "modify",
-          "description": "Replace green-based background gradients, card borders, and badge colors with blue equivalents. Update stat card styling to use the new blue palette with gold accent highlights."
-        },
-        {
-          "path": "frontend/src/components/FundCategoriesSection.tsx",
-          "operation": "modify",
-          "description": "Update fund category card borders, backgrounds, and badge colors from green to blue. Replace green hover states and gradient effects with blue equivalents. Ensure the 'Invest Now' button uses the new blue primary color."
-        },
-        {
-          "path": "frontend/src/components/WhyInvestSection.tsx",
-          "operation": "modify",
-          "description": "Replace green-based card borders, icon backgrounds, and gradient effects with blue equivalents. Update benefit card styling to use the new blue palette consistently."
-        },
-        {
-          "path": "frontend/src/components/LeadForm.tsx",
-          "operation": "modify",
-          "description": "Update form input focus states, button colors, and any green-based styling to use the new blue palette. Ensure the submit button uses blue primary color with appropriate hover states."
+          "description": "Replace the logo/brand name text from 'Planinvestgrow' to 'FutureEdge Investment' in the navigation bar branding section"
         },
         {
           "path": "frontend/src/components/Footer.tsx",
           "operation": "modify",
-          "description": "Replace green-based backgrounds, borders, and link colors with blue equivalents. Update footer section dividers and link hover states to use the new blue palette with gold accents."
-        },
-        {
-          "path": "frontend/src/pages/DashboardPage.tsx",
-          "operation": "modify",
-          "description": "Update dashboard stat cards, table headers, and any green-based UI elements to use the new blue palette. Replace green backgrounds and borders with blue equivalents."
-        }
-      ]
-    },
-    {
-      "id": "REQ-15",
-      "summary": "Add 'Unique Investment Strategy: Global Funds Beyond India' section with Plan-Invest-Grow tagline on HomePage",
-      "acceptanceCriteria": [
-        "A distinct 'Unique Investment Strategy' section appears on the HomePage",
-        "The tagline 'Plan-Invest-Grow' is prominently displayed within this section",
-        "The section communicates the benefit of global/international fund access beyond India",
-        "Section uses the blue theme with premium styling"
-      ],
-      "file_operations": [
-        {
-          "path": "frontend/src/components/GlobalFundsSection.tsx",
-          "operation": "create",
-          "description": "Create a premium full-width banner section component highlighting the unique investment strategy of offering global funds beyond India. Display the tagline 'Plan-Invest-Grow' prominently. Include 2-3 key differentiators in a grid or list format (global diversification, access to international growth, USD-denominated assets). Style with the new blue theme using gradient backgrounds, gold accent highlights, and professional typography. Ensure the section visually stands out with premium spacing and design."
-        },
-        {
-          "path": "frontend/src/pages/HomePage.tsx",
-          "operation": "modify",
-          "description": "Import and render the GlobalFundsSection component. Position it after the HeroSection and before the WhyInvestSection to give it prominent visibility. Ensure proper spacing and flow with surrounding sections."
-        }
-      ]
-    },
-    {
-      "id": "REQ-16",
-      "summary": "Update contact details to shethdarshit@live.com and Vadodara, Gujarat, India across all components",
-      "acceptanceCriteria": [
-        "Footer displays shethdarshit@live.com as the contact email",
-        "Footer displays 'Vadodara, Gujarat, India' as the location",
-        "AdvisorProfile shows updated email and location if applicable",
-        "No old/placeholder email or location values remain visible anywhere on the site"
-      ],
-      "file_operations": [
-        {
-          "path": "frontend/src/components/Footer.tsx",
-          "operation": "modify",
-          "description": "Update the email address to shethdarshit@live.com in the contact details section. Update the location to 'Vadodara, Gujarat, India'. Ensure both are displayed prominently in the footer with proper formatting."
-        },
-        {
-          "path": "frontend/src/components/AdvisorProfile.tsx",
-          "operation": "modify",
-          "description": "Update any displayed email or location information to shethdarshit@live.com and 'Vadodara, Gujarat, India'. If the location is part of the advisor credentials or description, ensure it reflects the new city and state."
-        },
-        {
-          "path": "frontend/src/components/LeadForm.tsx",
-          "operation": "modify",
-          "description": "Update the city field placeholder or pre-filled hint to suggest 'Vadodara, Gujarat, India' as the default location context. Ensure any location-related help text or examples use the updated location."
-        }
-      ]
-    },
-    {
-      "id": "REQ-17",
-      "summary": "Replace HeroSection background with professional advisor/investors image and add advisor portrait to AdvisorProfile",
-      "acceptanceCriteria": [
-        "HeroSection background displays a professional image of a financial advisor and investors in business attire",
-        "AdvisorProfile section includes a professional advisor portrait",
-        "Images are loaded from frontend/public/assets/generated",
-        "Images use blue-toned professional color grading consistent with the site theme"
-      ],
-      "file_operations": [
-        {
-          "path": "frontend/src/components/HeroSection.tsx",
-          "operation": "modify",
-          "description": "Replace the current background image with the generated professional scene from frontend/public/assets/generated/hero-professional.dim_1920x1080.png. Ensure the image is set as a full-width background with appropriate overlay for text readability. Position and style the image to complement the hero content and maintain the blue color tone."
-        },
-        {
-          "path": "frontend/src/components/AdvisorProfile.tsx",
-          "operation": "modify",
-          "description": "Add the professional advisor portrait from frontend/public/assets/generated/advisor-portrait.dim_600x600.png to the AdvisorProfile section. Position the portrait prominently (e.g., alongside the credentials or as a featured image). Style with appropriate sizing, border-radius, and shadow effects to match the blue theme and premium design aesthetic."
-        }
-      ]
-    },
-    {
-      "id": "REQ-18",
-      "summary": "Display 'Plan-Invest-Grow' tagline in Navigation, HeroSection, and Footer",
-      "acceptanceCriteria": [
-        "Tagline 'Plan-Invest-Grow' appears in the Navigation near the logo/brand name",
-        "Tagline appears in the HeroSection",
-        "Tagline appears in the Footer",
-        "Tagline is visually distinct from the brand name, styled with accent color"
-      ],
-      "file_operations": [
-        {
-          "path": "frontend/src/components/Navigation.tsx",
-          "operation": "modify",
-          "description": "Add the tagline 'Plan-Invest-Grow' next to or below the Planinvestgrow brand name in the logo area. Style it as a smaller, distinct element using the gold/amber accent color. Ensure proper spacing and alignment with the brand name. Make it responsive for mobile views."
-        },
-        {
-          "path": "frontend/src/components/HeroSection.tsx",
-          "operation": "modify",
-          "description": "Add the tagline 'Plan-Invest-Grow' prominently in the hero content area. Position it near the main headline or as a supporting subtitle. Style with the gold/amber accent color to make it visually distinct. Ensure it is legible against the new background image."
-        },
-        {
-          "path": "frontend/src/components/Footer.tsx",
-          "operation": "modify",
-          "description": "Add the tagline 'Plan-Invest-Grow' to the footer, either near the Planinvestgrow branding or in a prominent tagline section. Style it distinctly using the gold/amber accent color. Ensure it complements the footer layout and maintains visual hierarchy."
+          "description": "Update the brand name in the footer from 'Planinvestgrow' to 'FutureEdge Investment' while preserving all other footer content including contact details and 'Plan-Invest-Grow' tagline if present"
         }
       ]
     }

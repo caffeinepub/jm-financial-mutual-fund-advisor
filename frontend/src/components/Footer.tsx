@@ -3,7 +3,7 @@ import { Link } from '@tanstack/react-router';
 
 export default function Footer() {
   const year = new Date().getFullYear();
-  const appId = encodeURIComponent(window.location.hostname || 'planinvestgrow');
+  const appId = encodeURIComponent(window.location.hostname || 'futureedge-investment');
 
   return (
     <footer className="bg-navy-950 text-white/70">
@@ -17,7 +17,7 @@ export default function Footer() {
                 <TrendingUp className="w-5 h-5 text-navy-900" />
               </div>
               <div>
-                <div className="font-display font-bold text-white text-base">Planinvestgrow</div>
+                <div className="font-display font-bold text-white text-base">FutureEdge Investment</div>
                 <div className="text-xs text-gold-400 font-medium tracking-wider uppercase">Mutual Fund Advisor</div>
               </div>
             </div>
@@ -115,7 +115,7 @@ export default function Footer() {
       <div className="border-t border-white/10">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-col sm:flex-row items-center justify-between gap-3">
           <p className="text-xs text-white/40">
-            © {year} Darshit Sheth · Planinvestgrow. All rights reserved.
+            © {year} Darshit Sheth · FutureEdge Investment. All rights reserved.
           </p>
           <p className="text-xs text-white/40 flex items-center gap-1">
             Built with <Heart className="w-3 h-3 text-gold-500 fill-gold-500" /> using{' '}

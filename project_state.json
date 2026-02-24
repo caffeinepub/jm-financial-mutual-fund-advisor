@@ -1,18 +1,17 @@
 {
   "schemaVersion": "1.0.0",
-  "projectStateVersion": 9,
-  "summary": "A web application for Darshit Sheth, a JM Financial advisor certified by AMFI with 12+ years of experience, to promote mutual fund investments for the Indian market and global funds. Key stats: AUM ₹2 Crore, 25+ clients, 4+ years MF investments. Site name: Planinvestgrow.com. Tagline: 'Plan-Invest-Grow'. Location: Vadodara, Gujarat, India. Email: shethdarshit@live.com. Theme: Blue color scheme with professional investor/advisor imagery.",
+  "projectStateVersion": 11,
+  "summary": "A web application for Darshit Sheth, a JM Financial advisor certified by AMFI with 12+ years of experience, to promote mutual fund investments for the Indian market and global funds. Key stats: AUM ₹2 Crore, 25+ clients, 4+ years MF investments. Site name: FutureEdge Investment. Tagline: 'Plan-Invest-Grow'. Location: Vadodara, Gujarat, India. Email: shethdarshit@live.com. Theme: Blue color scheme with professional investor/advisor imagery.",
   "architectural_notes": [
     "Target market: Indian investors; content and regulations should reflect Indian financial market context (SEBI, AMC, etc.)",
     "Branding should align with JM Financial identity and Darshit Sheth as advisor",
-    "Site name is Planinvestgrow.com; branding should reflect this name",
     "Unique differentiator: Global funds beyond India in addition to domestic Indian market funds",
     "Contact email: shethdarshit@live.com; Location: Vadodara, Gujarat, India",
-    "Tagline: Plan-Invest-Grow; Blue color scheme with professional investor/advisor imagery"
+    "Tagline: Plan-Invest-Grow; Blue color scheme with professional investor/advisor imagery",
+    "Site name updated to FutureEdge Investment (previously Planinvestgrow.com)"
   ],
   "known_issues": [],
   "isFixRequest": false,
-  "imageRequirements": "## Required Images\n- Wide-format professional scene with a financial advisor and two investors seated at a desk in a modern office, all in formal business attire, blue-toned lighting with soft gold highlights, suitable as a full-width hero background (hero-professional.dim_1920x1080.png)\n- Professional headshot-style portrait of a male financial advisor in a dark navy business suit against a soft blue gradient background, confident expression (advisor-portrait.dim_600x600.png)",
   "existing_features": [
     {
       "id": "feature-create-a-professional-landing-home-page-that-prominently-features-darshit-sheth-s-name-title-certified-financial-advisor-indian-market-14-years-of-experience-and-his-association-with-jm-financial-include-a-hero-section-with-a-strong-call-to-action-button-inviting-visitors-to-start-investing-today-or-book-a-free-consultation",
@@ -149,6 +148,14 @@
         "REQ-18"
       ],
       "version": 1
+    },
+    {
+      "id": "feature-rename-the-site-brand-name-from-planinvestgrow-to-futureedge-investment-across-the-entire-application-update-all-occurrences-in-the-html-page-title-in-frontend-index-html-e-g-futureedge-investment-mutual-fund-advisor-the-navigation-logo-brand-name-text-in-navigation-tsx-the-footer-branding-in-footer-tsx-and-any-other-component-or-file-where-planinvestgrow-appears-as-a-brand-or-site-name-the-tagline-plan-invest-grow-should-remain-unchanged-wherever-it-is-displayed",
+      "title": "Rename the site/brand name from 'Planinvestgrow' to 'FutureEdge Investment' across the entire application. Update all occurrences in: the HTML page title in frontend/index.html (e.g., 'FutureEdge Investment - Mutual Fund Advisor'), the Navigation logo/brand name text in Navigation.tsx, the Footer branding in Footer.tsx, and any other component or file where 'Planinvestgrow' appears as a brand or site name. The tagline 'Plan-Invest-Grow' should remain unchanged wherever it is displayed.",
+      "reqIds": [
+        "REQ-19"
+      ],
+      "version": 1
     }
   ],
   "new_feature_requests": [
@@ -211,6 +218,12 @@
     {
       "id": "AR-14",
       "summary": "Add tagline 'Plan-Invest-Grow' prominently across the site branding",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-15",
+      "summary": "Rename the site/brand name to 'FutureEdge Investment' across all components including HTML title, Navigation logo, Footer branding, and any other location where the site name appears",
       "reqIds": [],
       "status": "pending"
     }
