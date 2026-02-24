@@ -77,7 +77,7 @@ export default function LeadForm() {
   };
 
   return (
-    <section id="lead-form" className="py-20 bg-forest-900 relative overflow-hidden">
+    <section id="lead-form" className="py-20 bg-navy-900 relative overflow-hidden">
       {/* Background decoration */}
       <div
         className="absolute inset-0 opacity-5 pointer-events-none"
@@ -101,6 +101,10 @@ export default function LeadForm() {
               Share your investment goals and Darshit Sheth will personally reach out to craft a
               tailored mutual fund strategy for you.
             </p>
+            <div className="mt-3 flex items-center justify-center gap-2 text-sm text-white/50">
+              <MapPin className="w-4 h-4 text-gold-400" />
+              <span>Serving clients from Vadodara, Gujarat, India & beyond</span>
+            </div>
           </div>
 
           {/* Form Card */}
@@ -173,7 +177,7 @@ export default function LeadForm() {
                   </Label>
                   <Input
                     id="city"
-                    placeholder="e.g. Mumbai, Delhi, Ahmedabad"
+                    placeholder="e.g. Vadodara, Ahmedabad, Mumbai"
                     className="bg-white/10 border-white/20 text-white placeholder:text-white/30 focus:border-gold-400 focus:ring-gold-400/20"
                     {...register('city', { required: 'City is required' })}
                   />
@@ -255,7 +259,7 @@ export default function LeadForm() {
                 type="submit"
                 disabled={submitLead.isPending}
                 size="lg"
-                className="w-full bg-gold-500 hover:bg-gold-400 text-forest-900 font-bold text-base py-3 rounded-md shadow-gold hover:shadow-lg transition-all duration-200"
+                className="w-full bg-gold-500 hover:bg-gold-400 text-navy-900 font-bold text-base py-3 rounded-md shadow-gold hover:shadow-lg transition-all duration-200"
               >
                 {submitLead.isPending ? (
                   <>

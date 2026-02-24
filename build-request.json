@@ -1,74 +1,120 @@
 {
   "kind": "build_request",
-  "title": "Update contact number, assets under management, and managing clients count",
-  "projectName": "JM Financial Advisor",
+  "title": "Blue theme, contact details, tagline, global funds USP, and professional imagery",
+  "projectName": "Planinvestgrow",
   "priority": "normal",
   "requirements": [
     {
-      "id": "REQ-8",
-      "text": "Update Darshit Sheth's contact phone number to 9725501285 wherever it appears across the site, including the Footer component and any other components that display contact details.",
+      "id": "REQ-14",
+      "text": "Update the site-wide color theme from forest-green/gold to a professional blue palette. Replace all green-based primary colors in index.css, tailwind.config.js, and all components with deep navy/royal blue as the primary color and gold/amber as accent. Ensure buttons, gradients, section backgrounds, card borders, and badge colors all use the new blue palette consistently across Navigation, HeroSection, AdvisorProfile, FundCategoriesSection, WhyInvestSection, LeadForm, Footer, and DashboardPage.",
       "target": "frontend",
       "source": {
         "messageIds": [
           "msg-4"
         ],
         "quotes": [
-          "Change Contact number to 9725501285"
+          "Website should be in Blue Color"
         ]
       },
       "acceptanceCriteria": [
-        "The phone number 9725501285 is displayed in the Footer component's contact details section",
-        "No outdated phone number remains visible anywhere on the site"
+        "Primary color tokens in index.css and tailwind.config.js are updated to deep navy/royal blue shades",
+        "All green-colored UI elements (buttons, headers, badges, borders, backgrounds) are replaced with blue equivalents",
+        "Gold/amber accent colors are retained for contrast and highlights",
+        "No residual forest-green colors remain in the visible UI"
       ]
     },
     {
-      "id": "REQ-9",
-      "text": "Update the 'Assets Under Management' stat to '₹10 Crore' in all components where this statistic is displayed, including the HeroSection and AdvisorProfile components.",
+      "id": "REQ-15",
+      "text": "Add a dedicated 'Unique Investment Strategy: Global Funds Beyond India' section on the HomePage. This section should highlight the tagline 'Plan-Invest-Grow', explain Darshit Sheth's unique approach of offering international/global mutual fund options beyond Indian markets, and present 2–3 key differentiators (e.g., global diversification, access to international growth, USD-denominated assets). Style it as a premium full-width banner or feature section that visually stands out from the rest of the page.",
       "target": "frontend",
       "source": {
         "messageIds": [
           "msg-4"
         ],
         "quotes": [
-          "Asset under management to 10 Crore"
+          "Add Unique investment Strategy: Global funds beyond India. Tag line -Plan-Invest-grow."
         ]
       },
       "acceptanceCriteria": [
-        "The HeroSection displays '₹10 Crore' as the assets under management figure",
-        "The AdvisorProfile component displays '₹10 Crore' as the assets under management figure",
-        "No outdated AUM figure remains visible anywhere on the site"
+        "A distinct 'Unique Investment Strategy' section appears on the HomePage",
+        "The tagline 'Plan-Invest-Grow' is prominently displayed within this section",
+        "The section communicates the benefit of global/international fund access beyond India",
+        "Section uses the blue theme with premium styling"
       ]
     },
     {
-      "id": "REQ-10",
-      "text": "Update the 'Managing Clients' stat to '150+' in all components where this statistic is displayed, including the HeroSection and AdvisorProfile components.",
+      "id": "REQ-16",
+      "text": "Update the email address to shethdarshit@live.com and location to 'Vadodara, Gujarat, India' in all components where contact details appear — including Footer, AdvisorProfile, LeadForm (placeholder or pre-filled city hint), and any other component displaying email or location.",
       "target": "frontend",
       "source": {
         "messageIds": [
           "msg-4"
         ],
         "quotes": [
-          "Managing Client 150+"
+          "Email Id should be shethdarshit@live.com and Location should be - Vadodara,Gujarat,India."
         ]
       },
       "acceptanceCriteria": [
-        "The HeroSection displays '150+' as the managing clients count",
-        "The AdvisorProfile component displays '150+' as the managing clients count",
-        "No outdated client count figure remains visible anywhere on the site"
+        "Footer displays shethdarshit@live.com as the contact email",
+        "Footer displays 'Vadodara, Gujarat, India' as the location",
+        "AdvisorProfile shows updated email and location if applicable",
+        "No old/placeholder email or location values remain visible anywhere on the site"
+      ]
+    },
+    {
+      "id": "REQ-17",
+      "text": "Replace the HeroSection background with a generated professional image showing a financial advisor and investors in professional business attire. Also add a professional advisor portrait image in the AdvisorProfile section. Both images should use the blue color tone consistent with the site theme. Render these as static assets from frontend/public/assets/generated.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-4"
+        ],
+        "quotes": [
+          "Investors and Financial advisor Image with Professional Dressing"
+        ]
+      },
+      "acceptanceCriteria": [
+        "HeroSection background displays a professional image of a financial advisor and investors in business attire",
+        "AdvisorProfile section includes a professional advisor portrait",
+        "Images are loaded from frontend/public/assets/generated",
+        "Images use blue-toned professional color grading consistent with the site theme"
+      ]
+    },
+    {
+      "id": "REQ-18",
+      "text": "Display the tagline 'Plan-Invest-Grow' prominently in the Navigation logo area (alongside the Planinvestgrow brand name), in the HeroSection, and in the Footer. Ensure it is styled as a distinct tagline (smaller than the brand name, possibly in gold/amber accent color).",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-4"
+        ],
+        "quotes": [
+          "Tag line -Plan-Invest-grow"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Tagline 'Plan-Invest-Grow' appears in the Navigation near the logo/brand name",
+        "Tagline appears in the HeroSection",
+        "Tagline appears in the Footer",
+        "Tagline is visually distinct from the brand name, styled with accent color"
       ]
     }
   ],
   "constraints": [
-    "Do not change any backend logic or data models",
-    "Do not alter the visual theme or layout — only update the specific stat/contact values"
+    "Do not modify any files under frontend/src/hooks/ or frontend/src/components/ui",
+    "Backend schema and data model must not change",
+    "Planinvestgrow brand name must be retained; only adding the tagline alongside it"
   ],
   "nonGoals": [
-    "Adding new sections or components",
-    "Changing any other advisor credentials or statistics",
-    "Modifying backend lead storage or API"
+    "Authentication or login functionality",
+    "Changes to the admin dashboard data model or backend logic",
+    "Adding new fund categories beyond what already exists"
   ],
   "imageRequirements": {
-    "required": [],
+    "required": [
+      "Wide-format professional scene with a financial advisor and two investors seated at a desk in a modern office, all in formal business attire, blue-toned lighting with soft gold highlights, suitable as a full-width hero background (hero-professional.dim_1920x1080.png)",
+      "Professional headshot-style portrait of a male financial advisor in a dark navy business suit against a soft blue gradient background, confident expression (advisor-portrait.dim_600x600.png)"
+    ],
     "edits": []
   }
 }

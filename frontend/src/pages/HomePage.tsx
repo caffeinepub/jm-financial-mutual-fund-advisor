@@ -1,5 +1,6 @@
 import { useRef } from 'react';
 import HeroSection from '../components/HeroSection';
+import GlobalFundsSection from '../components/GlobalFundsSection';
 import WhyInvestSection from '../components/WhyInvestSection';
 import FundCategoriesSection from '../components/FundCategoriesSection';
 import AdvisorProfile from '../components/AdvisorProfile';
@@ -18,6 +19,9 @@ export default function HomePage() {
   return (
     <>
       <HeroSection onCtaClick={scrollToForm} />
+
+      {/* Global Funds Strategy Section */}
+      <GlobalFundsSection onCtaClick={scrollToForm} />
 
       {/* Why Invest Section */}
       <div id="why-invest">

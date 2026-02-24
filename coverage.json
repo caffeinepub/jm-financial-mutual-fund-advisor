@@ -1,18 +1,75 @@
 {
   "kind": "coverage_report",
   "version": "1.0",
-  "generatedAt": "2026-02-24T21:24:45.370Z",
+  "generatedAt": "2026-02-24T22:36:28.485Z",
   "sources": {
     "buildRequest": true,
     "implementationPlan": true
   },
   "requirements": {
-    "total": 3,
-    "implemented": 3,
+    "total": 5,
+    "implemented": 5,
     "items": [
       {
-        "id": "REQ-10",
-        "summary": "Update the 'Managing Clients' stat to '150+' in all components where this statistic is displayed, including the HeroSection and AdvisorProfile components.",
+        "id": "REQ-14",
+        "summary": "Update the site-wide color theme from forest-green/gold to a professional blue palette. Replace all green-based primary colors in index.css, tailwind.config.js, and all components with deep navy/royal blue as the primary color and gold/amber as accent. Ensure buttons, gradients, section backgrounds, card borders, and badge colors all use the new blue palette consistently across Navigation, HeroSection, AdvisorProfile, FundCategoriesSection, WhyInvestSection, LeadForm, Footer, and DashboardPage.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/index.css",
+          "frontend/tailwind.config.js",
+          "frontend/src/components/Navigation.tsx",
+          "frontend/src/components/HeroSection.tsx",
+          "frontend/src/components/AdvisorProfile.tsx",
+          "frontend/src/components/FundCategoriesSection.tsx",
+          "frontend/src/components/WhyInvestSection.tsx",
+          "frontend/src/components/LeadForm.tsx",
+          "frontend/src/components/Footer.tsx",
+          "frontend/src/pages/DashboardPage.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/index.css",
+          "frontend/tailwind.config.js",
+          "frontend/src/components/Navigation.tsx",
+          "frontend/src/components/HeroSection.tsx",
+          "frontend/src/components/AdvisorProfile.tsx",
+          "frontend/src/components/FundCategoriesSection.tsx",
+          "frontend/src/components/WhyInvestSection.tsx",
+          "frontend/src/components/LeadForm.tsx",
+          "frontend/src/components/Footer.tsx",
+          "frontend/src/pages/DashboardPage.tsx"
+        ]
+      },
+      {
+        "id": "REQ-15",
+        "summary": "Add a dedicated 'Unique Investment Strategy: Global Funds Beyond India' section on the HomePage. This section should highlight the tagline 'Plan-Invest-Grow', explain Darshit Sheth's unique approach of offering international/global mutual fund options beyond Indian markets, and present 2–3 key differentiators (e.g., global diversification, access to international growth, USD-denominated assets). Style it as a premium full-width banner or feature section that visually stands out from the rest of the page.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/GlobalFundsSection.tsx",
+          "frontend/src/pages/HomePage.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/GlobalFundsSection.tsx",
+          "frontend/src/pages/HomePage.tsx"
+        ]
+      },
+      {
+        "id": "REQ-16",
+        "summary": "Update the email address to shethdarshit@live.com and location to 'Vadodara, Gujarat, India' in all components where contact details appear — including Footer, AdvisorProfile, LeadForm (placeholder or pre-filled city hint), and any other component displaying email or location.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/Footer.tsx",
+          "frontend/src/components/AdvisorProfile.tsx",
+          "frontend/src/components/LeadForm.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/Footer.tsx",
+          "frontend/src/components/AdvisorProfile.tsx",
+          "frontend/src/components/LeadForm.tsx"
+        ]
+      },
+      {
+        "id": "REQ-17",
+        "summary": "Replace the HeroSection background with a generated professional image showing a financial advisor and investors in professional business attire. Also add a professional advisor portrait image in the AdvisorProfile section. Both images should use the blue color tone consistent with the site theme. Render these as static assets from frontend/public/assets/generated.",
         "status": "implemented",
         "plannedFiles": [
           "frontend/src/components/HeroSection.tsx",
@@ -24,40 +81,41 @@
         ]
       },
       {
-        "id": "REQ-8",
-        "summary": "Update Darshit Sheth's contact phone number to 9725501285 wherever it appears across the site, including the Footer component and any other components that display contact details.",
+        "id": "REQ-18",
+        "summary": "Display the tagline 'Plan-Invest-Grow' prominently in the Navigation logo area (alongside the Planinvestgrow brand name), in the HeroSection, and in the Footer. Ensure it is styled as a distinct tagline (smaller than the brand name, possibly in gold/amber accent color).",
         "status": "implemented",
         "plannedFiles": [
+          "frontend/src/components/Navigation.tsx",
+          "frontend/src/components/HeroSection.tsx",
           "frontend/src/components/Footer.tsx"
         ],
         "matchedFiles": [
+          "frontend/src/components/Navigation.tsx",
+          "frontend/src/components/HeroSection.tsx",
           "frontend/src/components/Footer.tsx"
-        ]
-      },
-      {
-        "id": "REQ-9",
-        "summary": "Update the 'Assets Under Management' stat to '₹10 Crore' in all components where this statistic is displayed, including the HeroSection and AdvisorProfile components.",
-        "status": "implemented",
-        "plannedFiles": [
-          "frontend/src/components/HeroSection.tsx",
-          "frontend/src/components/AdvisorProfile.tsx"
-        ],
-        "matchedFiles": [
-          "frontend/src/components/HeroSection.tsx",
-          "frontend/src/components/AdvisorProfile.tsx"
         ]
       }
     ]
   },
   "changedFiles": [
     "build-request.json",
-    "build-template/README.md",
     "feature_evidence.json",
     "frontend-file-summaries.txt",
     "frontend-implementation-plan.json",
+    "frontend/public/assets/generated/advisor-portrait.dim_600x600.png",
+    "frontend/public/assets/generated/hero-professional.dim_1920x1080.png",
     "frontend/src/components/AdvisorProfile.tsx",
     "frontend/src/components/Footer.tsx",
+    "frontend/src/components/FundCategoriesSection.tsx",
+    "frontend/src/components/GlobalFundsSection.tsx",
     "frontend/src/components/HeroSection.tsx",
+    "frontend/src/components/LeadForm.tsx",
+    "frontend/src/components/Navigation.tsx",
+    "frontend/src/components/WhyInvestSection.tsx",
+    "frontend/src/index.css",
+    "frontend/src/pages/DashboardPage.tsx",
+    "frontend/src/pages/HomePage.tsx",
+    "frontend/tailwind.config.js",
     "project_state.json",
     "scratch/component-selection.json",
     "spec.md",

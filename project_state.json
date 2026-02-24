@@ -1,13 +1,18 @@
 {
   "schemaVersion": "1.0.0",
-  "projectStateVersion": 5,
-  "summary": "A web application for Darshit Sheth, a certified financial advisor with 14 years of experience, to promote mutual fund investments through JM Financial for the Indian market. The app will help attract and assist potential investors.",
+  "projectStateVersion": 9,
+  "summary": "A web application for Darshit Sheth, a JM Financial advisor certified by AMFI with 12+ years of experience, to promote mutual fund investments for the Indian market and global funds. Key stats: AUM ₹2 Crore, 25+ clients, 4+ years MF investments. Site name: Planinvestgrow.com. Tagline: 'Plan-Invest-Grow'. Location: Vadodara, Gujarat, India. Email: shethdarshit@live.com. Theme: Blue color scheme with professional investor/advisor imagery.",
   "architectural_notes": [
     "Target market: Indian investors; content and regulations should reflect Indian financial market context (SEBI, AMC, etc.)",
-    "Branding should align with JM Financial identity and Darshit Sheth as advisor"
+    "Branding should align with JM Financial identity and Darshit Sheth as advisor",
+    "Site name is Planinvestgrow.com; branding should reflect this name",
+    "Unique differentiator: Global funds beyond India in addition to domestic Indian market funds",
+    "Contact email: shethdarshit@live.com; Location: Vadodara, Gujarat, India",
+    "Tagline: Plan-Invest-Grow; Blue color scheme with professional investor/advisor imagery"
   ],
   "known_issues": [],
   "isFixRequest": false,
+  "imageRequirements": "## Required Images\n- Wide-format professional scene with a financial advisor and two investors seated at a desk in a modern office, all in formal business attire, blue-toned lighting with soft gold highlights, suitable as a full-width hero background (hero-professional.dim_1920x1080.png)\n- Professional headshot-style portrait of a male financial advisor in a dark navy business suit against a soft blue gradient background, confident expression (advisor-portrait.dim_600x600.png)",
   "existing_features": [
     {
       "id": "feature-create-a-professional-landing-home-page-that-prominently-features-darshit-sheth-s-name-title-certified-financial-advisor-indian-market-14-years-of-experience-and-his-association-with-jm-financial-include-a-hero-section-with-a-strong-call-to-action-button-inviting-visitors-to-start-investing-today-or-book-a-free-consultation",
@@ -80,6 +85,70 @@
         "REQ-10"
       ],
       "version": 1
+    },
+    {
+      "id": "feature-update-all-advisor-credential-displays-site-wide-to-reflect-amfi-certified-mf-certified-by-amfi-12-years-of-experience-replacing-any-14-years-references-aum-2-crore-replacing-10-crore-25-clients-replacing-150-and-4-years-in-mf-investments-apply-these-changes-across-herosection-advisorprofile-footer-navigation-and-any-other-component-that-displays-these-stats",
+      "title": "Update all advisor credential displays site-wide to reflect: AMFI Certified (MF Certified by AMFI), 12+ years of experience (replacing any '14 years' references), AUM ₹2 Crore (replacing '₹10 Crore'), 25+ clients (replacing '150+'), and 4+ years in MF investments. Apply these changes across HeroSection, AdvisorProfile, Footer, Navigation, and any other component that displays these stats.",
+      "reqIds": [
+        "REQ-11"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-site-title-branding-name-to-planinvestgrow-across-the-entire-application-including-the-html-page-title-index-html-navigation-logo-brand-name-footer-branding-and-any-other-location-where-the-site-or-app-name-appears-e-g-jm-financial-mutual-fund-advisor-in-the-page-title",
+      "title": "Update the site title/branding name to 'Planinvestgrow' across the entire application — including the HTML page title (index.html), Navigation logo/brand name, Footer branding, and any other location where the site or app name appears (e.g., 'JM Financial - Mutual Fund Advisor' in the page title).",
+      "reqIds": [
+        "REQ-12"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-global-funds-highlight-as-a-unique-selling-point-section-or-prominent-card-on-the-site-this-should-communicate-that-darshit-sheth-offers-mutual-fund-investment-options-beyond-india-including-international-global-funds-which-differentiates-him-from-typical-indian-mf-advisors-this-can-be-a-dedicated-section-on-the-homepage-a-featured-card-in-fundcategoriessection-or-a-highlighted-banner-include-a-brief-description-of-the-benefit-of-global-diversification",
+      "title": "Add a 'Global Funds' highlight as a unique selling point section or prominent card on the site. This should communicate that Darshit Sheth offers mutual fund investment options beyond India — including international/global funds — which differentiates him from typical Indian MF advisors. This can be a dedicated section on the HomePage, a featured card in FundCategoriesSection, or a highlighted banner. Include a brief description of the benefit of global diversification.",
+      "reqIds": [
+        "REQ-13"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-site-wide-color-theme-from-forest-green-gold-to-a-professional-blue-palette-replace-all-green-based-primary-colors-in-index-css-tailwind-config-js-and-all-components-with-deep-navy-royal-blue-as-the-primary-color-and-gold-amber-as-accent-ensure-buttons-gradients-section-backgrounds-card-borders-and-badge-colors-all-use-the-new-blue-palette-consistently-across-navigation-herosection-advisorprofile-fundcategoriessection-whyinvestsection-leadform-footer-and-dashboardpage",
+      "title": "Update the site-wide color theme from forest-green/gold to a professional blue palette. Replace all green-based primary colors in index.css, tailwind.config.js, and all components with deep navy/royal blue as the primary color and gold/amber as accent. Ensure buttons, gradients, section backgrounds, card borders, and badge colors all use the new blue palette consistently across Navigation, HeroSection, AdvisorProfile, FundCategoriesSection, WhyInvestSection, LeadForm, Footer, and DashboardPage.",
+      "reqIds": [
+        "REQ-14"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-dedicated-unique-investment-strategy-global-funds-beyond-india-section-on-the-homepage-this-section-should-highlight-the-tagline-plan-invest-grow-explain-darshit-sheth-s-unique-approach-of-offering-international-global-mutual-fund-options-beyond-indian-markets-and-present-2-3-key-differentiators-e-g-global-diversification-access-to-international-growth-usd-denominated-assets-style-it-as-a-premium-full-width-banner-or-feature-section-that-visually-stands-out-from-the-rest-of-the-page",
+      "title": "Add a dedicated 'Unique Investment Strategy: Global Funds Beyond India' section on the HomePage. This section should highlight the tagline 'Plan-Invest-Grow', explain Darshit Sheth's unique approach of offering international/global mutual fund options beyond Indian markets, and present 2–3 key differentiators (e.g., global diversification, access to international growth, USD-denominated assets). Style it as a premium full-width banner or feature section that visually stands out from the rest of the page.",
+      "reqIds": [
+        "REQ-15"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-email-address-to-shethdarshit-live-com-and-location-to-vadodara-gujarat-india-in-all-components-where-contact-details-appear-including-footer-advisorprofile-leadform-placeholder-or-pre-filled-city-hint-and-any-other-component-displaying-email-or-location",
+      "title": "Update the email address to shethdarshit@live.com and location to 'Vadodara, Gujarat, India' in all components where contact details appear — including Footer, AdvisorProfile, LeadForm (placeholder or pre-filled city hint), and any other component displaying email or location.",
+      "reqIds": [
+        "REQ-16"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-replace-the-herosection-background-with-a-generated-professional-image-showing-a-financial-advisor-and-investors-in-professional-business-attire-also-add-a-professional-advisor-portrait-image-in-the-advisorprofile-section-both-images-should-use-the-blue-color-tone-consistent-with-the-site-theme-render-these-as-static-assets-from-frontend-public-assets-generated",
+      "title": "Replace the HeroSection background with a generated professional image showing a financial advisor and investors in professional business attire. Also add a professional advisor portrait image in the AdvisorProfile section. Both images should use the blue color tone consistent with the site theme. Render these as static assets from frontend/public/assets/generated.",
+      "reqIds": [
+        "REQ-17"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-display-the-tagline-plan-invest-grow-prominently-in-the-navigation-logo-area-alongside-the-planinvestgrow-brand-name-in-the-herosection-and-in-the-footer-ensure-it-is-styled-as-a-distinct-tagline-smaller-than-the-brand-name-possibly-in-gold-amber-accent-color",
+      "title": "Display the tagline 'Plan-Invest-Grow' prominently in the Navigation logo area (alongside the Planinvestgrow brand name), in the HeroSection, and in the Footer. Ensure it is styled as a distinct tagline (smaller than the brand name, possibly in gold/amber accent color).",
+      "reqIds": [
+        "REQ-18"
+      ],
+      "version": 1
     }
   ],
   "new_feature_requests": [
@@ -116,8 +185,32 @@
       "status": "pending"
     },
     {
-      "id": "AR-9",
-      "summary": "Update contact number to 9725501285, assets under management to 10 Crore, and managing clients to 150+ on the site",
+      "id": "AR-10",
+      "summary": "Update advisor credentials: AMFI certified, 12+ years experience, AUM ₹2 Crore, 25+ clients, 4+ years MF investments across all site components",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-11",
+      "summary": "Add 'Global Funds' section/category highlighting mutual fund options beyond India as a unique selling point",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-12",
+      "summary": "Update site-wide contact details: email to shethdarshit@live.com and location to Vadodara, Gujarat, India",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-13",
+      "summary": "Update site theme to blue color scheme with professional investor and financial advisor images with professional dressing",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-14",
+      "summary": "Add tagline 'Plan-Invest-Grow' prominently across the site branding",
       "reqIds": [],
       "status": "pending"
     }

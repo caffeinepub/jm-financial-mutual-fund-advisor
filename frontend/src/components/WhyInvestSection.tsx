@@ -16,8 +16,8 @@ const benefits = [
     description:
       'Begin your investment journey with as little as ₹500/month through Systematic Investment Plans. Benefit from rupee cost averaging and the power of compounding over time.',
     tag: 'SIP',
-    color: 'text-forest-600',
-    bg: 'bg-forest-50',
+    color: 'text-navy-600',
+    bg: 'bg-navy-50',
   },
   {
     icon: IndianRupee,
@@ -34,8 +34,8 @@ const benefits = [
     description:
       'All mutual funds in India are regulated by SEBI (Securities and Exchange Board of India), ensuring investor protection, transparency, and fair practices.',
     tag: 'SEBI Regulated',
-    color: 'text-forest-700',
-    bg: 'bg-forest-50',
+    color: 'text-navy-700',
+    bg: 'bg-navy-50',
   },
   {
     icon: BarChart3,
@@ -52,8 +52,8 @@ const benefits = [
     description:
       'Equity mutual funds have historically delivered 12–15% CAGR over 10+ year horizons in India, significantly outperforming traditional savings instruments like FDs.',
     tag: 'High Returns',
-    color: 'text-forest-600',
-    bg: 'bg-forest-50',
+    color: 'text-navy-600',
+    bg: 'bg-navy-50',
   },
   {
     icon: Leaf,
@@ -70,8 +70,8 @@ const benefits = [
     description:
       'Unlike FDs or real estate, most mutual funds offer high liquidity. Redeem your investments within 1–3 business days, giving you financial flexibility when needed.',
     tag: 'Liquid',
-    color: 'text-forest-600',
-    bg: 'bg-forest-50',
+    color: 'text-navy-600',
+    bg: 'bg-navy-50',
   },
 ];
 
@@ -108,7 +108,7 @@ export default function WhyInvestSection() {
           {benefits.map(({ icon: Icon, title, description, tag, color, bg }) => (
             <Card
               key={title}
-              className="group border border-border hover:border-forest-300 shadow-card hover:shadow-card-hover transition-all duration-300 hover:-translate-y-1 bg-card"
+              className="group border border-border hover:border-navy-300 shadow-card hover:shadow-card-hover transition-all duration-300 hover:-translate-y-1 bg-card"
             >
               <CardContent className="p-6">
                 <div className={`inline-flex items-center justify-center w-12 h-12 rounded-xl ${bg} mb-4`}>

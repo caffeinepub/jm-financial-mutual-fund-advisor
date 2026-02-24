@@ -70,18 +70,18 @@ export default {
                     border: 'oklch(var(--sidebar-border))',
                     ring: 'oklch(var(--sidebar-ring))'
                 },
-                forest: {
-                    50:  'oklch(0.97 0.01 155)',
-                    100: 'oklch(0.93 0.02 155)',
-                    200: 'oklch(0.86 0.04 155)',
-                    300: 'oklch(0.72 0.07 155)',
-                    400: 'oklch(0.58 0.09 155)',
-                    500: 'oklch(0.45 0.10 155)',
-                    600: 'oklch(0.36 0.09 155)',
-                    700: 'oklch(0.28 0.08 155)',
-                    800: 'oklch(0.22 0.06 155)',
-                    900: 'oklch(0.16 0.04 155)',
-                    950: 'oklch(0.12 0.03 155)',
+                navy: {
+                    50:  'oklch(0.97 0.01 250)',
+                    100: 'oklch(0.93 0.03 250)',
+                    200: 'oklch(0.85 0.05 250)',
+                    300: 'oklch(0.72 0.08 250)',
+                    400: 'oklch(0.58 0.10 250)',
+                    500: 'oklch(0.45 0.12 250)',
+                    600: 'oklch(0.36 0.12 250)',
+                    700: 'oklch(0.30 0.12 250)',
+                    800: 'oklch(0.22 0.10 250)',
+                    900: 'oklch(0.16 0.08 250)',
+                    950: 'oklch(0.12 0.06 250)',
                 },
                 gold: {
                     50:  'oklch(0.97 0.03 80)',
@@ -105,9 +105,10 @@ export default {
             },
             boxShadow: {
                 xs: '0 1px 2px 0 rgba(0,0,0,0.05)',
-                card: '0 4px 24px -4px rgba(20, 60, 40, 0.12)',
-                'card-hover': '0 8px 32px -4px rgba(20, 60, 40, 0.20)',
+                card: '0 4px 24px -4px rgba(20, 40, 100, 0.12)',
+                'card-hover': '0 8px 32px -4px rgba(20, 40, 100, 0.20)',
                 gold: '0 4px 20px -4px rgba(180, 140, 40, 0.35)',
+                blue: '0 4px 20px -4px rgba(30, 60, 180, 0.35)',
             },
             keyframes: {
                 'accordion-down': {
