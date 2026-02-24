@@ -1,0 +1,74 @@
+{
+  "kind": "build_request",
+  "title": "Update contact number, assets under management, and managing clients count",
+  "projectName": "JM Financial Advisor",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-8",
+      "text": "Update Darshit Sheth's contact phone number to 9725501285 wherever it appears across the site, including the Footer component and any other components that display contact details.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-4"
+        ],
+        "quotes": [
+          "Change Contact number to 9725501285"
+        ]
+      },
+      "acceptanceCriteria": [
+        "The phone number 9725501285 is displayed in the Footer component's contact details section",
+        "No outdated phone number remains visible anywhere on the site"
+      ]
+    },
+    {
+      "id": "REQ-9",
+      "text": "Update the 'Assets Under Management' stat to '₹10 Crore' in all components where this statistic is displayed, including the HeroSection and AdvisorProfile components.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-4"
+        ],
+        "quotes": [
+          "Asset under management to 10 Crore"
+        ]
+      },
+      "acceptanceCriteria": [
+        "The HeroSection displays '₹10 Crore' as the assets under management figure",
+        "The AdvisorProfile component displays '₹10 Crore' as the assets under management figure",
+        "No outdated AUM figure remains visible anywhere on the site"
+      ]
+    },
+    {
+      "id": "REQ-10",
+      "text": "Update the 'Managing Clients' stat to '150+' in all components where this statistic is displayed, including the HeroSection and AdvisorProfile components.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-4"
+        ],
+        "quotes": [
+          "Managing Client 150+"
+        ]
+      },
+      "acceptanceCriteria": [
+        "The HeroSection displays '150+' as the managing clients count",
+        "The AdvisorProfile component displays '150+' as the managing clients count",
+        "No outdated client count figure remains visible anywhere on the site"
+      ]
+    }
+  ],
+  "constraints": [
+    "Do not change any backend logic or data models",
+    "Do not alter the visual theme or layout — only update the specific stat/contact values"
+  ],
+  "nonGoals": [
+    "Adding new sections or components",
+    "Changing any other advisor credentials or statistics",
+    "Modifying backend lead storage or API"
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  }
+}

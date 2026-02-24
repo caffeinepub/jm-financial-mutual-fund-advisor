@@ -1,0 +1,129 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 5,
+  "summary": "A web application for Darshit Sheth, a certified financial advisor with 14 years of experience, to promote mutual fund investments through JM Financial for the Indian market. The app will help attract and assist potential investors.",
+  "architectural_notes": [
+    "Target market: Indian investors; content and regulations should reflect Indian financial market context (SEBI, AMC, etc.)",
+    "Branding should align with JM Financial identity and Darshit Sheth as advisor"
+  ],
+  "known_issues": [],
+  "isFixRequest": false,
+  "existing_features": [
+    {
+      "id": "feature-create-a-professional-landing-home-page-that-prominently-features-darshit-sheth-s-name-title-certified-financial-advisor-indian-market-14-years-of-experience-and-his-association-with-jm-financial-include-a-hero-section-with-a-strong-call-to-action-button-inviting-visitors-to-start-investing-today-or-book-a-free-consultation",
+      "title": "Create a professional landing/home page that prominently features Darshit Sheth's name, title ('Certified Financial Advisor – Indian Market'), 14 years of experience, and his association with JM Financial. Include a hero section with a strong call-to-action button inviting visitors to 'Start Investing Today' or 'Book a Free Consultation'.",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-a-why-invest-in-mutual-funds-section-explaining-the-benefits-of-mutual-fund-investments-tailored-to-the-indian-market-e-g-sip-options-tax-saving-elss-funds-diversification-sebi-regulation-long-term-wealth-creation-present-benefits-as-visually-distinct-cards-or-icon-driven-items",
+      "title": "Build a 'Why Invest in Mutual Funds' section explaining the benefits of mutual fund investments tailored to the Indian market (e.g., SIP options, tax-saving ELSS funds, diversification, SEBI regulation, long-term wealth creation). Present benefits as visually distinct cards or icon-driven items.",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-mutual-fund-product-category-listing-section-showcasing-major-fund-categories-available-through-jm-financial-relevant-to-the-indian-market-e-g-equity-funds-debt-funds-hybrid-funds-elss-tax-saver-funds-sip-plans-each-category-card-should-show-a-brief-description-key-feature-tags-and-a-know-more-invest-now-button",
+      "title": "Create a mutual fund product/category listing section showcasing major fund categories available through JM Financial relevant to the Indian market (e.g., Equity Funds, Debt Funds, Hybrid Funds, ELSS/Tax Saver Funds, SIP Plans). Each category card should show a brief description, key feature tags, and a 'Know More / Invest Now' button.",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-a-lead-capture-investor-inquiry-form-that-collects-the-investor-s-full-name-email-phone-number-city-preferred-fund-category-dropdown-estimated-investment-amount-range-dropdown-and-a-short-message-on-submission-the-data-is-saved-to-the-backend-and-a-success-confirmation-message-is-shown-to-the-user",
+      "title": "Build a lead capture / investor inquiry form that collects the investor's full name, email, phone number, city, preferred fund category (dropdown), estimated investment amount range (dropdown), and a short message. On submission, the data is saved to the backend and a success confirmation message is shown to the user.",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-simple-admin-advisor-dashboard-page-accessible-via-a-dedicated-route-no-authentication-required-for-initial-build-where-darshit-sheth-can-view-a-table-of-all-submitted-investor-leads-including-their-name-contact-info-city-fund-interest-amount-range-and-submission-date",
+      "title": "Create a simple admin/advisor dashboard page (accessible via a dedicated route, no authentication required for initial build) where Darshit Sheth can view a table of all submitted investor leads including their name, contact info, city, fund interest, amount range, and submission date.",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-apply-a-professional-trust-inspiring-visual-theme-across-the-entire-application-use-a-color-palette-evoking-financial-stability-and-indian-market-warmth-such-as-deep-navy-or-forest-green-as-primary-with-gold-amber-accents-typography-should-be-clean-and-modern-layout-should-feel-premium-and-authoritative-suitable-for-a-certified-financial-advisor-s-platform",
+      "title": "Apply a professional, trust-inspiring visual theme across the entire application. Use a color palette evoking financial stability and Indian market warmth — such as deep navy or forest green as primary, with gold/amber accents. Typography should be clean and modern. Layout should feel premium and authoritative, suitable for a certified financial advisor's platform.",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-darshit-sheth-s-contact-phone-number-to-9725501285-wherever-it-appears-across-the-site-including-the-footer-component-and-any-other-components-that-display-contact-details",
+      "title": "Update Darshit Sheth's contact phone number to 9725501285 wherever it appears across the site, including the Footer component and any other components that display contact details.",
+      "reqIds": [
+        "REQ-8"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-assets-under-management-stat-to-10-crore-in-all-components-where-this-statistic-is-displayed-including-the-herosection-and-advisorprofile-components",
+      "title": "Update the 'Assets Under Management' stat to '₹10 Crore' in all components where this statistic is displayed, including the HeroSection and AdvisorProfile components.",
+      "reqIds": [
+        "REQ-9"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-managing-clients-stat-to-150-in-all-components-where-this-statistic-is-displayed-including-the-herosection-and-advisorprofile-components",
+      "title": "Update the 'Managing Clients' stat to '150+' in all components where this statistic is displayed, including the HeroSection and AdvisorProfile components.",
+      "reqIds": [
+        "REQ-10"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Landing/home page showcasing Darshit Sheth's profile, credentials, 14 years of experience, and JM Financial association",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "Mutual fund investment categories/products listing page with details relevant to Indian market",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "Lead capture / contact form for potential investors to request a consultation or express interest in investing",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-4",
+      "summary": "Why Invest / benefits section explaining advantages of mutual fund investments in India",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-8",
+      "summary": "Implement a backend data model to store investor leads submitted via the contact form. The lead record should capture: full name, email, phone number, city, investment interest (fund category), investment amount range, and submission timestamp.",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-9",
+      "summary": "Update contact number to 9725501285, assets under management to 10 Crore, and managing clients to 150+ on the site",
+      "reqIds": [],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "JM Financial - Mutual Fund Advisor",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}
